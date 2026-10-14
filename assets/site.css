@@ -227,7 +227,6 @@ a { color: inherit; }
   text-decoration-thickness: 3px; text-underline-offset: 6px;
 }
 .site-link:hover { text-decoration-thickness: 5px; }
-.game-id { margin-top: clamp(20px, 3vw, 32px); color: var(--g-text-2); font-family: var(--font-mono); font-size: .8125rem; }
 
 .game-shots { display: flex; align-items: flex-start; justify-content: center; }
 .shot { flex: 0 1 clamp(140px, 19vw, 262px); }
