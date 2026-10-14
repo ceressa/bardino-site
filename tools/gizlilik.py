@@ -47,7 +47,7 @@ METIN = {
         "updated": "Son güncelleme",
         "body": [
             ("p", "Bu sayfa yalnız bu web sitesini, bardino.app'i anlatır. Her oyunun kendi gizlilik politikası var: "
-                  '<a href="https://decimo.bardino.app/privacy-policy.html">Decimo</a>, '
+                  '<a href="https://decimo.bardino.app/tr/privacy-policy.html">Decimo</a>, '
                   '<a href="https://colmo.bardino.app/tr/privacy.html">Colmo</a> ve '
                   '<a href="https://palmo.bardino.app/tr/privacy.html">Palmo</a>.'),
             ("h2", "Bu sitenin yapmadıkları"),
