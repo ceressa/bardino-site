@@ -14,4 +14,18 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://bardino.app/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bardino.app/"/>
   </url>
+  <url>
+    <loc>https://bardino.app/privacy.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bardino.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bardino.app/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bardino.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://bardino.app/tr/privacy.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bardino.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bardino.app/tr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bardino.app/privacy.html"/>
+  </url>
 </urlset>
