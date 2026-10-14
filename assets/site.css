@@ -243,6 +243,23 @@ a { color: inherit; }
 }
 .mail:hover { text-decoration-thickness: .11em; }
 
+/* Uyelik metinleri (uyelik/*.html, tools/uyelik.py uretir) */
+.doc-home { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; text-decoration: none; }
+.doc-home img { width: 38px; height: 38px; }
+.doc { max-width: 46rem; padding-block: clamp(16px, 3vw, 40px) clamp(48px, 7vw, 96px); }
+.doc article + article { margin-top: clamp(48px, 7vw, 88px); padding-top: clamp(32px, 5vw, 56px); border-top: 3px solid var(--edge); }
+.doc h1 { color: var(--ink); font-family: var(--font-display); font-size: clamp(1.9rem, 1.3rem + 2.6vw, 3rem); font-weight: 800; line-height: 1.08; letter-spacing: -.025em; text-wrap: balance; }
+.doc h2 { margin-top: 2em; color: var(--ink); font-family: var(--font-display); font-size: clamp(1.25rem, 1.1rem + .7vw, 1.6rem); font-weight: 800; line-height: 1.2; }
+.doc p, .doc ul, .doc ol, .doc .doc-table { margin-top: .9em; }
+.doc ul, .doc ol { padding-left: 1.4em; }
+.doc li + li { margin-top: .35em; }
+.doc a { color: var(--ink); font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.doc .doc-table { overflow-x: auto; }
+.doc table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.doc th, .doc td { padding: 10px 12px; border: 2px solid var(--rule); text-align: left; vertical-align: top; }
+.doc th { background: var(--surface); color: var(--ink); }
+.doc blockquote { margin: 1em 0 0; padding: 12px 16px; border-left: 4px solid var(--yellow); background: var(--surface); }
+
 /* Footer */
 .site-foot { padding: 36px 0 44px; border-top: 3px solid var(--edge); font-size: .95rem; }
 .foot-grid { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 28px 48px; }
