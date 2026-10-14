@@ -34,11 +34,99 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Bardino Technology",
-  "url": "https://bardino.app",
-  "email": "info@bardino.app",
-  "logo": "https://bardino.app/apple-touch-icon.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bardino.app/#org",
+      "name": "Bardino Technology",
+      "alternateName": "Bardino",
+      "url": "https://bardino.app/",
+      "email": "info@bardino.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bardino.app/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@bardino.app",
+        "contactType": "customer support",
+        "availableLanguage": [
+          "en",
+          "tr"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bardino.app/#site",
+      "name": "Bardino",
+      "alternateName": "Bardino Technology",
+      "url": "https://bardino.app/",
+      "inLanguage": "tr",
+      "publisher": {
+        "@id": "https://bardino.app/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Decimo",
+      "url": "https://decimo.bardino.app/tr/",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://bardino.app/#org"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.bardino.numberchain",
+        "https://apps.apple.com/app/decimo-number-chain/id6792291932"
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Colmo",
+      "url": "https://colmo.bardino.app/tr/",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://bardino.app/#org"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.bardino.colmo",
+        "https://apps.apple.com/app/colmo-jar-puzzle/id6805859722"
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Palmo",
+      "url": "https://palmo.bardino.app/tr/",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android, iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://bardino.app/#org"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.bardino.palmo",
+        "https://apps.apple.com/app/palmo-number-weave/id6806719070"
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -89,19 +177,7 @@
 <section class="hero">
   <div class="wrap">
     <h1><span class="vh">Bardino Technology</span>
-      <svg class="hero-wm" viewBox="0 0 716 152" aria-hidden="true" focusable="false">
-        <g class="wm-rules"><line x1="-3000" y1="50" x2="3716" y2="50"/><line x1="-3000" y1="150" x2="3716" y2="150"/></g>
-        <g fill="none" stroke="currentColor" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M16 19V136"/><circle cx="52" cy="100" r="36"/>
-          <circle cx="166" cy="100" r="36"/><path d="M202 64V136"/>
-          <path d="M252 64V136M252 100A36 36 0 0 1 297.32 65.23"/>
-          <circle cx="374" cy="100" r="36"/><path d="M410 19V136"/>
-          <path d="M460 64V136"/>
-          <path d="M510 64V136M510 100A36 36 0 0 1 582 100V136"/>
-          <circle cx="664" cy="100" r="36"/>
-        </g>
-        <rect class="wm-dot" x="444" y="5" width="32" height="32" rx="9" fill="#FFC83D" stroke="currentColor" stroke-width="5"/>
-      </svg>
+      <svg class="hero-wm bardino-intro" viewBox="0 0 600 150" data-bardino-intro role="button" tabindex="0" aria-label="Bardino açılışını sesli oynat" data-sound="../assets/bardino.mp3"><g class="wm-rules"><line x1="-3000" y1="39" x2="3600" y2="39"/><line x1="-3000" y1="101" x2="3600" y2="101"/></g><g class="bi-mark"><g transform="translate(0 6) scale(1.12)"><rect x="4.5" y="9.5" width="91" height="87" rx="21" class="bi-ef bi-es" stroke-width="5"/><rect x="4.5" y="3" width="91" height="87" rx="21" fill="#FFC83D" class="bi-es" stroke-width="5"/><g fill="none" stroke="#1B2F4A" stroke-width="11.2" stroke-linecap="round"><path d="M37.1 22.1V68.9"/><circle cx="51.5" cy="54.5" r="14.4"/></g></g></g><g class="bi-word"><g transform="translate(134 8) scale(.62)" fill="none" stroke="currentColor" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19V136"/><circle cx="52" cy="100" r="36"/><circle cx="166" cy="100" r="36"/><path d="M202 64V136"/><path d="M252 64V136M252 100A36 36 0 0 1 297.32 65.23"/><circle cx="374" cy="100" r="36"/><path d="M410 19V136"/><path d="M460 64V136"/><path d="M510 64V136M510 100A36 36 0 0 1 582 100V136"/><circle cx="664" cy="100" r="36"/></g></g><g transform="translate(139 112) scale(.65)"><g class="bi-stone"><rect x="2" y="6" width="32" height="32" rx="9" class="bi-ef bi-es" stroke-width="3.5"/><rect x="2" y="2" width="32" height="32" rx="9" fill="#2E2C7A" class="bi-es" stroke-width="3.5"/></g><g class="bi-stone"><rect x="44" y="6" width="32" height="32" rx="9" class="bi-ef bi-es" stroke-width="3.5"/><rect x="44" y="2" width="32" height="32" rx="9" fill="#FF5BA3" class="bi-es" stroke-width="3.5"/></g><g class="bi-stone"><rect x="86" y="6" width="32" height="32" rx="9" class="bi-ef bi-es" stroke-width="3.5"/><rect x="86" y="2" width="32" height="32" rx="9" fill="#ABD7B6" class="bi-es" stroke-width="3.5"/></g></g><g class="bi-dot" transform="translate(419.2 30.94)"><rect x="-9.92" y="-19.84" width="19.84" height="19.84" rx="5.58" fill="#FFC83D" class="bi-es" stroke-width="3.1"/></g></svg>
     </h1>
 
     <div class="hero-body">
@@ -247,5 +323,6 @@
     <p class="fine">Bu site çerez kullanmıyor ve başka sunuculardan hiçbir şey yüklemiyor.</p>
   </div>
 </footer>
+<script src="../assets/bardino-intro.js" defer></script>
 </body>
 </html>

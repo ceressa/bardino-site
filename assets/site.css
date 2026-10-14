@@ -97,17 +97,16 @@ a { color: inherit; }
 }
 .hero-wm { width: 100%; height: auto; overflow: visible; color: var(--ink); }
 .wm-rules line { stroke: var(--rule); stroke-width: 1.5; stroke-dasharray: 2 7; vector-effect: non-scaling-stroke; }
-.wm-dot { transform-box: fill-box; transform-origin: 50% 100%; }
-@media (prefers-reduced-motion: no-preference) {
-  .wm-dot { animation: dot-drop 1s cubic-bezier(.3, .7, .4, 1) .35s both; }
-}
-@keyframes dot-drop {
-  0% { transform: translateY(-190%) rotate(-24deg); opacity: 0; }
-  40% { opacity: 1; }
-  62% { transform: translateY(6%) rotate(4deg); }
-  80% { transform: translateY(-8%) rotate(-2deg); }
-  100% { transform: none; opacity: 1; }
-}
+/* Bardino kilidi ve acilis filmi (assets/bardino-intro.js). Nokta ucarken
+   kutunun ustune cikiyor; overflow gorunur olmali. Kontur ve golge rengi
+   --bi-edge'den, yazi currentColor'dan. */
+.bardino-intro { overflow: visible; }
+.bardino-intro .bi-ef { fill: var(--bi-edge, #1B2F4A); }
+.bardino-intro .bi-es { stroke: var(--bi-edge, #1B2F4A); }
+/* Basliktaki kilit ayni film: sayfa acilinca bir kez oynar, tiklayinca
+   sesiyle yeniden. Eskiden burada yalniz noktanin dustugu bir CSS
+   animasyonu vardi; uc oyunun acilisiyla ayni film oldu. */
+.hero-wm.bardino-intro { --bi-edge: var(--edge); cursor: pointer; border-radius: 12px; }
 
 .hero-body {
   display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
