@@ -139,28 +139,12 @@
     <rect x="4.5" y="3" width="91" height="87" rx="21" fill="#FFC83D" stroke="#1B2F4A" stroke-width="5"/>
     <g fill="none" stroke="#1B2F4A" stroke-width="11.2" stroke-linecap="round"><path d="M37.1 22.1V68.9"/><circle cx="51.5" cy="54.5" r="14.4"/></g>
   </symbol>
-  <symbol id="bd-wm" viewBox="0 0 716 152">
-    <g fill="none" stroke="currentColor" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M16 19V136"/><circle cx="52" cy="100" r="36"/>
-      <circle cx="166" cy="100" r="36"/><path d="M202 64V136"/>
-      <path d="M252 64V136M252 100A36 36 0 0 1 297.32 65.23"/>
-      <circle cx="374" cy="100" r="36"/><path d="M410 19V136"/>
-      <path d="M460 64V136"/>
-      <path d="M510 64V136M510 100A36 36 0 0 1 582 100V136"/>
-      <circle cx="664" cy="100" r="36"/>
-    </g>
-    <rect x="444" y="5" width="32" height="32" rx="9" fill="#FFC83D" stroke="currentColor" stroke-width="5"/>
-  </symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM17 15.4l-3.1-3.1v-.2L17 9l.1.1 3.7 2.1c1 .6 1 1.6 0 2.2L17 15.4zM16 16.4l-3.2-3.2-9.2 9.2c.4.4 1 .4 1.7 0l10.7-6zM16 8.1L5.3 2.1c-.7-.4-1.3-.4-1.7 0l9.2 9.2L16 8.1z"/></symbol>
   <symbol id="i-apple" viewBox="0 0 24 24"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.8-3.6 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.8.7 1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.4 1.2-2.4s-2.2-.9-2.2-3.3zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-.9 2.6 1 .1 2-.5 2.6-1.2z"/></symbol>
 </svg>
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="./" aria-label="Bardino Technology, ana sayfa">
-      <svg class="brand-mark" aria-hidden="true" focusable="false"><use href="#bd-mark"/></svg>
-      <svg class="brand-wm" aria-hidden="true" focusable="false"><use href="#bd-wm"/></svg>
-    </a>
     <nav class="site-nav" aria-label="Ana menü">
       <a href="#games">Oyunlar</a>
       <a href="#studio">Stüdyo</a>
@@ -183,19 +167,11 @@
     <div class="hero-body">
       <div>
         <p class="statement">Bulmaca oyunları yapıyoruz.<br>Çoğunlukla <em>sayılarla</em>.</p>
-        <p class="lead">Şimdilik üç oyun var, hepsi Android ve iOS için. Üçü de yayında.</p>
+        <p class="lead">Şimdilik üç oyun var, hepsi Android ve iOS'ta.</p>
         <div class="actions">
           <a class="btn btn-primary" href="#games">Oyunlara bak</a>
           <a class="btn" href="mailto:info@bardino.app">info@bardino.app</a>
         </div>
-      </div>
-      <div>
-        <p class="index-label" id="index-label">Oyunlarımız</p>
-        <ul class="index" aria-labelledby="index-label">
-          <li><a href="#decimo"><img src="../assets/games/decimo-icon.webp" width="56" height="56" alt=""><span><b>Decimo</b><small class="status live">Yayında</small></span><span class="arrow" aria-hidden="true">&darr;</span></a></li>
-          <li><a href="#colmo"><img src="../assets/games/colmo-icon.webp" width="56" height="56" alt=""><span><b>Colmo</b><small class="status live">Yayında</small></span><span class="arrow" aria-hidden="true">&darr;</span></a></li>
-          <li><a href="#palmo"><img src="../assets/games/palmo-icon.webp" width="56" height="56" alt=""><span><b>Palmo</b><small class="status live">Yayında</small></span><span class="arrow" aria-hidden="true">&darr;</span></a></li>
-        </ul>
       </div>
     </div>
   </div>
@@ -210,12 +186,13 @@
 
     <article class="game game--decimo" id="decimo" aria-labelledby="decimo-name">
       <div class="game-text">
-        <p class="game-meta"><span class="game-num">01</span><span class="chip chip-live">App Store ve Google Play'de</span></p>
+        <p class="game-meta"><span class="game-num">01</span></p>
         <div class="game-head">
           <img class="game-icon" src="../assets/games/decimo-icon.webp" width="104" height="104" alt="" loading="lazy" decoding="async">
           <div><h3 id="decimo-name">Decimo</h3><p class="game-tag">Sayı zinciri bulmacası</p></div>
         </div>
-        <p class="game-line">Bitişik sayıları sürükle, zincir kur.</p>
+        <p class="game-line">Öğrenmesi bir dakika, sonrası 145 bölüm boyunca “bir taş daha”.</p>
+        <p class="game-rule">Bitişik sayıları sırayla sürükle: 4, 5, 6 ve 9'dan sonra yine 1.</p>
         <div class="game-actions">
           <div class="stores">
             <a class="store" href="https://play.google.com/store/apps/details?id=com.bardino.numberchain" aria-label="Google Play'de Decimo"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Google Play</a>
@@ -232,12 +209,13 @@
 
     <article class="game game--colmo" id="colmo" aria-labelledby="colmo-name">
       <div class="game-text">
-        <p class="game-meta"><span class="game-num">02</span><span class="chip chip-live">App Store ve Google Play'de</span></p>
+        <p class="game-meta"><span class="game-num">02</span></p>
         <div class="game-head">
           <img class="game-icon" src="../assets/games/colmo-icon.webp" width="104" height="104" alt="" loading="lazy" decoding="async">
           <div><h3 id="colmo-name">Colmo</h3><p class="game-tag">Kavanozları ağzına kadar doldur</p></div>
         </div>
-        <p class="game-line">Cam kavanozlarla dolu bir odada geçen sakin bir sayı bulmacası.</p>
+        <p class="game-line">Sessiz bir oda, tek el, acele yok.</p>
+        <p class="game-rule">Her kavanozun bir kapasitesi var. Eline gelen dozlarla onu tam doldur; bir fazlasını kavanoz kabul etmez.</p>
         <div class="game-actions">
           <div class="stores">
             <a class="store" href="https://play.google.com/store/apps/details?id=com.bardino.colmo" aria-label="Google Play'de Colmo"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Google Play</a>
@@ -254,12 +232,13 @@
 
     <article class="game game--palmo" id="palmo" aria-labelledby="palmo-name">
       <div class="game-text">
-        <p class="game-meta"><span class="game-num">03</span><span class="chip chip-live">App Store ve Google Play'de</span></p>
+        <p class="game-meta"><span class="game-num">03</span></p>
         <div class="game-head">
           <img class="game-icon" src="../assets/games/palmo-icon.webp" width="104" height="104" alt="" loading="lazy" decoding="async">
           <div><h3 id="palmo-name">Palmo</h3><p class="game-tag">Bütün tahtayı doku</p></div>
         </div>
-        <p class="game-line">Tohumdaki rakam, o bölgenin büyüklüğüdür.</p>
+        <p class="game-line">Artan hücre kalmayınca biten sessiz bir bulmaca.</p>
+        <p class="game-rule">Tohumdaki rakam, bölgesinin kaç hücre olduğudur. Her bölgeyi tam o büyüklüğe getir, tahta kapansın.</p>
         <div class="game-actions">
           <div class="stores">
             <a class="store" href="https://play.google.com/store/apps/details?id=com.bardino.palmo" aria-label="Google Play'de Palmo"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Google Play</a>
