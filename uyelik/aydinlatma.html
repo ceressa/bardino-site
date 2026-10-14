@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bardino Üyeliği KVKK Aydınlatma Metni - Bardino</title>
+<meta name="description" content="Bardino üyeliğinde işlenen kişisel veriler hakkında KVKK aydınlatma metni.">
+<link rel="canonical" href="https://bardino.app/uyelik/aydinlatma">
+<meta name="theme-color" content="#FDF6F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15132A" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="doc-page">
+<!-- tools/uyelik.py uretti, kaynak bardino/docs/AYDINLATMA.md (v1). Elle duzenleme. -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="doc-home" href="../tr/" aria-label="Bardino ana sayfa"><img src="../assets/bardino-mark.svg" width="38" height="38" alt=""><span>Bardino</span></a>
+    <nav class="site-nav" aria-label="Dil">
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <a href="#tr" hreflang="tr" lang="tr">Türkçe</a>
+        <a href="#en" hreflang="en" lang="en">English</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap doc">
+<article id="tr" lang="tr">
+<h1>Bardino Üyeliği KVKK Aydınlatma Metni</h1>
+<p>Sürüm: v1 · Yürürlük: 14 Ekim 2026</p>
+<p><a href="#en">English version below</a></p>
+<h2>1. Veri sorumlusu</h2>
+<p>Bardino (Decimo, Colmo ve Palmo'yu yayımlayan geliştirici). İletişim: info@bardino.app.</p>
+<p>Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca, Decimo, Colmo ve Palmo oyunlarındaki <strong>Bardino üyeliği</strong> için hazırlanmıştır. Oyunların kendisinde işlenen veriler her oyunun kendi gizlilik politikasında anlatılır.</p>
+<h2>2. İşlenen kişisel veriler</h2>
+<div class="doc-table"><table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Nereden gelir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-posta adresi ve onun tek yönlü özeti (SHA-256)</td>
+<td>Oyunda Google ya da Apple ile girdiğiniz hesaptan, doğrulanmış olarak. Apple "e-postamı gizle" seçildiyse Apple'ın verdiği yönlendirme adresi.</td>
+</tr>
+<tr>
+<td>Takma ad</td>
+<td>Sizin yazdığınız ad.</td>
+</tr>
+<tr>
+<td>Bağlı oyun hesapları</td>
+<td>Bağladığınız her oyundaki hesap kimliği (Firebase kullanıcı kimliği), ilk bağlanma ve son görülme zamanı.</td>
+</tr>
+<tr>
+<td>Üyelik işlemleri</td>
+<td>Onay verdiğiniz koşul sürümü ve tarihi, 13 yaş beyanınız, rozetler, ortak seri (son gün, uzunluk, en uzun), hediyeler (tür, içerik, oluşturulma ve alınma zamanı).</td>
+</tr>
+<tr>
+<td>Hediye kaydı</td>
+<td>Hangi oyun hesabının hangi Bardino hediyesini aldığı. Oyun hesabı kimliğinin tek yönlü özetiyle tutulur; e-posta ve ad içermez.</td>
+</tr>
+<tr>
+<td>Teknik kayıtlar</td>
+<td>Bardino'nun kendi kaydı: her istek için üye kimliği (rastgele bir numara), oyun, istek yolu, sonuç kodu ve süre; e-posta, oyun hesabı kimliği ve IP adresi yazılmaz. Barındırma platformunun (Google Cloud Run) istek kaydı ise IP adresini, istek adresini, tarayıcı/uygulama bilgisini (user agent) ve zamanı tutar. IP adresi ayrıca kötüye kullanımı sınırlamak için bellekte en fazla bir dakika tutulur.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Adınız, telefonunuz, konumunuz, cihaz kimliğiniz ve ödeme bilgileriniz Bardino üyeliği için işlenmez.</p>
+<h2>3. Amaçlar</h2>
+<ol>
+<li>Üç oyundaki hesaplarınızı aynı e-postayla tek üyelikte birleştirmek.</li>
+<li>Ortak takma adı, ortak günlük seriyi ve oyunlar arası hediyeleri sunmak.</li>
+<li>Aynı hediyenin aynı oyun hesabına ikinci kez verilmesini önlemek.</li>
+<li>Hizmetin güvenliğini sağlamak ve kötüye kullanımı sınırlamak.</li>
+<li>Üyeliğin kullanımını toplu olarak ölçmek (kaç üye, kaç oyun bağlı, seri uzunlukları).</li>
+</ol>
+<h2>4. Hukuki sebepler (KVKK m. 5/2)</h2>
+<ul>
+<li><strong>(c) Sözleşmenin kurulması ve ifası:</strong> Bardino Üyelik Koşulları'nı kabul ederek kurduğunuz üyelik ilişkisi; 1. ve 2. amaçlar.</li>
+<li><strong>(f) Meşru menfaat:</strong> hediye kaydı, güvenlik ve toplu ölçüm; 3., 4. ve 5. amaçlar.</li>
+<li><strong>(ç) Hukuki yükümlülük:</strong> yetkili makamların kanuna dayanan talepleri.</li>
+</ul>
+<p>Bardino üyeliği açık rızaya dayanmaz. Katılırken işaretlediğiniz kutu koşulları kabul ettiğinizi, bu metni okuduğunuzu ve 13 yaşından büyük olduğunuzu bildirir.</p>
+<h2>5. Toplama yöntemi</h2>
+<p>Veriler otomatik yolla, oyunların içinden toplanır:</p>
+<ul>
+<li>Bardino açıkken ve oyunda Google ya da Apple ile girmişken oyun, e-postanızın üye olup olmadığını merkeze sorar. Üye değilseniz bu sorgudan e-postasız teknik kayıt dışında hiçbir şey saklanmaz.</li>
+<li>"Üye ol" dediğinizde ve onay verdiğinizde üyeliğiniz oluşturulur; e-posta, oyunun Google/Apple girişinden aldığı kimlik belirtecinden (ID token) okunur.</li>
+<li>Seri, hediye ve son görülme kayıtları oyunları oynadıkça oluşur.</li>
+</ul>
+<h2>6. Aktarım</h2>
+<ul>
+<li>Veriler satılmaz ve üçüncü kişilerle paylaşılmaz. Decimo, Colmo ve Palmo aynı veri sorumlusunun oyunlarıdır.</li>
+<li><strong>Yurt dışına aktarım:</strong> Veriler, veri işleyen sıfatıyla Google'ın (Google Cloud / Firebase) Avrupa Birliği'ndeki sunucularında (eur3 çok bölgeli konumu: Belçika ve Hollanda) tutulur. Google bu veriler için Google Cloud veri işleme koşullarıyla (Cloud Data Processing Addendum) bağlıdır.</li>
+<li>Kanunen yetkili kamu kurum ve kuruluşlarına, kanunun zorunlu kıldığı hallerde.</li>
+</ul>
+<h2>7. Saklama süresi</h2>
+<ul>
+<li><strong>Üyelik verileri</strong> (e-posta, özeti, takma ad, bağlı oyun hesapları, seri, hediyeler, onay): üyelikten çıkana kadar. Herhangi bir oyunun ayarlarındaki "Bardino üyeliğinden çık" ile hemen silinir.</li>
+<li><strong>Hediye kaydı</strong> (oyun hesabı özeti + alınan hediye kimlikleri): amacı aynı hediyenin tekrar verilmesini önlemek olduğu için üyelikten çıktıktan sonra da tutulur. Süre: son hediyeden itibaren 2 yıl; süresi dolan kayıt silinir.</li>
+<li><strong>Teknik kayıtlar:</strong> Google Cloud Logging'de 30 gün.</li>
+<li>Oyunlardaki ilerleme ve oyuna eklenmiş hediyeler oyunun kendi gizlilik politikasına tabidir; üyelikten çıkmak onları silmez.</li>
+</ul>
+<h2>8. Haklarınız (KVKK m. 11)</h2>
+<p>Bardino'ya başvurarak:</p>
+<ul>
+<li>a) kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
+<li>b) işlenmişse buna ilişkin bilgi talep etme,</li>
+<li>c) işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+<li>ç) yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+<li>d) eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+<li>e) KVKK m. 7'deki şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+<li>f) (d) ve (e) bentlerine göre yapılan işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+<li>g) münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonuç çıkmasına itiraz etme,</li>
+<li>ğ) kanuna aykırı işleme sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+</ul>
+<p>haklarına sahipsiniz.</p>
+<h2>9. Başvuru</h2>
+<ul>
+<li>Üyelik verilerinizi silmek için başvuru gerekmez: herhangi bir oyunda "Bardino üyeliğinden çık".</li>
+<li>Diğer talepler: Bardino'ya kayıtlı e-posta adresinizden info@bardino.app'e. Başvuru, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olmalı.</li>
+<li>Başvurular en geç 30 gün içinde ücretsiz yanıtlanır. İşlem ayrıca bir maliyet gerektirirse Kurul'un belirlediği tarifedeki ücret alınabilir.</li>
+</ul>
+<h2>10. Yaş</h2>
+<p>Bardino üyeliği 13 yaş ve üstü içindir. 13 yaşından küçükler katılamaz.</p>
+<h2>11. Değişiklikler</h2>
+<p>Metin değişirse sürüm numarası artar ve yeni sürüm oyun içinde gösterilir.</p>
+</article>
+<article id="en" lang="en" aria-label="Bardino Membership: Personal Data Protection Notice">
+<h1>Bardino Membership: Personal Data Protection Notice (KVKK)</h1>
+<p>Version: v1 · Effective: 14 October 2026</p>
+<h2>1. Data controller</h2>
+<p>Bardino (the developer that publishes Decimo, Colmo and Palmo). Contact: info@bardino.app.</p>
+<p>This notice is given under Article 10 of the Turkish Personal Data Protection Law No. 6698 ("KVKK") for <strong>Bardino membership</strong> in the games Decimo, Colmo and Palmo. Data processed by the games themselves is described in each game's own privacy policy.</p>
+<h2>2. Personal data processed</h2>
+<div class="doc-table"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-mail address and its one-way hash (SHA-256)</td>
+<td>The Google or Apple account you use to sign in to the game, as a verified address. If you chose Apple "Hide My Email", the relay address Apple provides.</td>
+</tr>
+<tr>
+<td>Nickname</td>
+<td>The name you type.</td>
+</tr>
+<tr>
+<td>Linked game accounts</td>
+<td>Your account ID in each linked game (Firebase user ID), first-linked and last-seen times.</td>
+</tr>
+<tr>
+<td>Membership activity</td>
+<td>The terms version you accepted and when, your age-13 confirmation, badges, the shared streak (last day, length, longest), gifts (type, contents, created and claimed times).</td>
+</tr>
+<tr>
+<td>Gift record</td>
+<td>Which game account claimed which Bardino gift. Stored under a one-way hash of the game account ID; contains no e-mail and no name.</td>
+</tr>
+<tr>
+<td>Technical logs</td>
+<td>Bardino's own log: for each request, member ID (a random number), game, request path, status code and duration; e-mail, game account ID and IP address are not written. The hosting platform's (Google Cloud Run) request log records the IP address, request URL, user agent and time. The IP address is also held in memory for at most one minute to limit abuse.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Your name, phone number, location, device identifiers and payment details are not processed for Bardino membership.</p>
+<h2>3. Purposes</h2>
+<ol>
+<li>Linking your accounts in the three games into one membership by e-mail.</li>
+<li>Providing the shared nickname, the shared daily streak and cross-game gifts.</li>
+<li>Preventing the same gift from being given twice to the same game account.</li>
+<li>Keeping the service secure and limiting abuse.</li>
+<li>Measuring use of the membership in aggregate (number of members, linked games, streak lengths).</li>
+</ol>
+<h2>4. Legal bases (KVKK Art. 5/2)</h2>
+<ul>
+<li><strong>(c) Establishing and performing a contract:</strong> the membership you enter by accepting the Bardino Membership Terms; purposes 1 and 2.</li>
+<li><strong>(f) Legitimate interest:</strong> the gift record, security and aggregate measurement; purposes 3, 4 and 5.</li>
+<li><strong>(ç) Legal obligation:</strong> lawful requests from competent authorities.</li>
+</ul>
+<p>Bardino membership does not rely on explicit consent. The box you tick when joining confirms that you accept the terms, have read this notice and are over 13.</p>
+<h2>5. How data is collected</h2>
+<p>Automatically, from inside the games:</p>
+<ul>
+<li>While Bardino is switched on and you are signed in with Google or Apple, the game asks the hub whether your e-mail is a member. If you are not a member, nothing is stored from this check except an e-mail-free technical log line.</li>
+<li>When you tap "Join" and confirm, your membership is created; the e-mail is read from the identity token (ID token) the game received from Google/Apple sign-in.</li>
+<li>Streak, gift and last-seen records are created as you play.</li>
+</ul>
+<h2>6. Transfers</h2>
+<ul>
+<li>Data is not sold and not shared with third parties. Decimo, Colmo and Palmo are games of the same controller.</li>
+<li><strong>Transfer abroad:</strong> data is stored by Google (Google Cloud / Firebase), acting as processor, on servers in the European Union (the eur3 multi-region: Belgium and the Netherlands). For this data Google is bound by the Google Cloud data processing terms (Cloud Data Processing Addendum).</li>
+<li>To competent public authorities where the law requires.</li>
+</ul>
+<h2>7. Retention</h2>
+<ul>
+<li><strong>Membership data</strong> (e-mail, its hash, nickname, linked game accounts, streak, gifts, consent): until you leave. "Leave Bardino membership" in any game's settings deletes it immediately.</li>
+<li><strong>Gift record</strong> (game account hash + claimed gift IDs): kept after you leave, because its purpose is to stop the same gift being given again. Period: 2 years from the last gift; an expired record is deleted.</li>
+<li><strong>Technical logs:</strong> 30 days in Google Cloud Logging.</li>
+<li>Game progress and gifts already added to a game are governed by that game's privacy policy; leaving Bardino does not delete them.</li>
+</ul>
+<h2>8. Your rights (KVKK Art. 11)</h2>
+<p>You may apply to Bardino to: (a) learn whether your data is processed; (b) request information about it; (c) learn the purpose and whether it is used accordingly; (ç) know the third parties it is transferred to, in Turkey or abroad; (d) have incomplete or incorrect data corrected; (e) have it erased or destroyed under KVKK Art. 7; (f) have actions under (d) and (e) notified to recipients; (g) object to an outcome against you arising solely from automated analysis; (ğ) claim compensation for damage caused by unlawful processing.</p>
+<h2>9. How to apply</h2>
+<ul>
+<li>No application is needed to delete membership data: use "Leave Bardino membership" in any game.</li>
+<li>Other requests: e-mail info@bardino.app from the address registered with Bardino, in line with the Communiqué on the Procedures and Principles of Application to the Data Controller.</li>
+<li>Requests are answered free of charge within 30 days at the latest; if the action has an additional cost, the fee set by the Board may be charged.</li>
+</ul>
+<h2>10. Age</h2>
+<p>Bardino membership is for people aged 13 and over. Under-13s may not join.</p>
+<h2>11. Changes</h2>
+<p>If this notice changes, its version number increases and the new version is shown in the games.</p>
+</article>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="fine">&copy; 2026 Bardino Technology &middot; <a href="mailto:info@bardino.app">info@bardino.app</a></p>
+  </div>
+</footer>
+</body>
+</html>
